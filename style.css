@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.card-img-top {
+    object-fit: cover;
+    height: 250px;
+    /* Define uma altura fixa para as imagens dos cards */
+}
+
+.carousel-inner img {
+    max-height: 500px;
+    /* Limita a altura das imagens do carrossel */
+    object-fit: cover;
+}
+
+#login{
+    text-decoration: none;
+        /* Remove a linha padrão */
+        position: relative;
+        /* Necessário para a posição da linha */
+        color: #ffffff;
+        /* Cor do texto */
+}
+
+#login::after{
+    content: "";
+        /* Elemento vazio para a linha */
+        position: absolute;
+        width: 0;
+        /* A linha começa com 0 largura */
+        height: 2px;
+        /* Espessura da linha */
+        bottom: 0;
+        left: 0;
+        background-color: #329607;
+        /* Cor da linha */
+        transition: width 0.3s ease;
+        /* Animação suave */
+}
+
+#login:hover::after{
+    width: 100%;
+        /* A linha se expande ao passar o mouse */
+}
+
+/* .navbar-custom {
+    background-color: #16151ac0;
+} */
+
+h4 {
+    text-align: center;
+    /* Centraliza o texto horizontalmente */
+    margin: 20px 0;
+    /* Espaçamento superior e inferior */
+}
+
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px #00000033;
+}
+
+.card-img-top {
+    object-fit: cover;
+    /* Ajuste conforme necessário: cover, contain, fill, etc. */
+    height: 100%;
+    width: 100%;
+}
+
+.nav-link {
+    text-decoration: none;
+    position: relative;
+    color: #000000 !important;
+    /* Força a cor branca para o texto */
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #329607;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+footer a:hover {
+    color: #329607;
+    /* Cor dos links ao passar o mouse */
+}
+
+footer .btn-primary {
+    background-color: #007bff;
+    /* Cor do botão de inscrição */
+    border: none;
+    /* Remove a borda do botão */
+}
+
+footer .btn-primary:hover {
+    background-color: #0056b3;
+    /* Cor do botão ao passar o mouse */
+}
+
+.bg-body{
+    background: linear-gradient(45deg, #c9c9c9a2, #F8F9FA);
+}
+
+.marquee-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    color: #329607;
+    background-color: #1A1D25;
+    padding: 10px 0;
+}
+
+.marquee {
+    display: flex;
+    animation: marquee 15s linear infinite;
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.marquee span {
+    margin-right: 2rem;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Impede o fundo de mover-se */
+.marquee-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #1A1D25;
+    /* ou qualquer cor de fundo desejada */
+    z-index: -1;
+}
+

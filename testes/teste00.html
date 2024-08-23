@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/static/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>AMSP Sports</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="/static/logo2.png" alt="AMSP" width="250" height="auto">
+                </a>
+                <div class="mx-auto" style="flex: 1;">
+                    <form class="d-flex" style="max-width: 600px; margin: auto;">
+                        <input class="form-control me-2" type="search" placeholder="Qual modelo você quer?"
+                            aria-label="Search">
+                        <button class="btn btn-outline-success active" type="submit"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-search" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                            </svg></button>
+                    </form>
+                </div>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#" id="login"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="auto" fill="currentColor"
+                                class="bi bi-box-arrow-in-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z" />
+                                <path fill-rule="evenodd"
+                                    d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+                            </svg> Login/Cadastro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="auto"
+                                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="auto"
+                                fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <ul class="nav justify-content-center navbar-custom">
+        <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Início</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Camisas de futebol</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Camisas da NBA</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Shorts de futebol</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Shorts da NBA</a>
+        </li>
+    </ul>
+    <br>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="/static/1.jpg" class="d-block w-100" alt="carregando..">
+            </div>
+            <div class="carousel-item">
+                <img src="/static/2.jpg" class="d-block w-100" alt="carregando..">
+            </div>
+            <div class="carousel-item">
+                <img src="/static/3.jpg" class="d-block w-100" alt="carregando..">
+            </div>
+        </div>
+    </div>
+
+
+    <main class="container my-5">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card text-center">
+                    <img src="/static/brasileirao.png" class="card-img-top img-fluid mx-auto d-block" alt="..."
+                        style="max-width: 50px; margin-top: 15px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Times brasileiros</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center">
+                    <img src="/static/2022_FIFA_World_Cup.svg.png" class="card-img-top img-fluid mx-auto d-block"
+                        alt="..." style="max-width: 50px; margin-top: 15px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Seleções</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center">
+                    <img src="/static/727px-MLS_crest_logo_RGB_gradient.svg.png"
+                        class="card-img-top img-fluid mx-auto d-block" alt="..."
+                        style="max-width: 50px; margin-top: 15px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Times da MLS</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center">
+                    <img src="/static/bundesliga_logo.png" class="card-img-top img-fluid mx-auto d-block" alt="..."
+                        style="max-width: 50px; margin-top: 15px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Times Alemãos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center">
+                    <img src="/static/epl-premierleague-logo.png" class="card-img-top img-fluid mx-auto d-block"
+                        alt="..." style="max-width: 50px; margin-top: 15px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Times ingleses</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center">
+                    <img src="/static/Italian-Serie-A-logo-1.png" class="card-img-top img-fluid mx-auto d-block"
+                        alt="..." style="max-width: 50px; margin-top: 15px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Times italianos</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center">
+                    <img src="/static/laliga-logo-4-1.png" class="card-img-top img-fluid mx-auto d-block" alt="..."
+                        style="max-width: 50px; margin-top: 15px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Times espanhois</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card text-center">
+                    <img src="/static/ligue-1-logo-CB821B1015-seeklogo-1.png"
+                        class="card-img-top img-fluid mx-auto d-block" alt="..."
+                        style="max-width: 50px; margin-top: 15px;">
+                    <div class="card-body">
+                        <h5 class="card-title">Times franceses</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/2 camisas.png" class="card-img-top" alt="Card 1">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/3 camisas.png" class="card-img-top" alt="Card 2">
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/5 camisas.png" class="card-img-top" alt="Card 3">
+                </div>
+            </div>
+        </div>
+        <br>
+        <h4>Produtos em Destaque</h4>
+        <br>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/23-10.jpeg" class="card-img-top" alt="Card 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Camisas Retrô</h5>
+                        <p class="card-text"><a href="#">Ver mais opções</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/vasco.jpg" class="card-img-top" alt="Card 5">
+                    <div class="card-body">
+                        <h5 class="card-title">Lançamentos 2024/25</h5>
+                        <p class="card-text"><a href="#">Ver mais opções</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/static/camisa-flamengo-i-2024-torcedor-com-patrocinios-vermelho-e-preto-2-2ccc687d3fe9a62e8617093096228757-640-0.png"
+                        class="card-img-top" alt="Card 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Mais populares</h5>
+                        <p class="card-text"><a href="#">Ver mais opções</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-light text-center py-4">
+        <div class="container">
+            <!-- Menu de Navegação -->
+            <div class="mb-4">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre nós</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contato</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Política de Privacidade</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Redes Sociais -->
+            <div class="mb-4">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path
+                                    d="M9.197 3.142c0-.59-.048-1.173-.134-1.749-.078-.451-.202-.883-.364-1.295-.198-.426-.504-.814-.855-1.141-.242-.228-.53-.416-.84-.553-.312-.133-.654-.206-.998-.206H5.46V4.177h1.564c.185 0 .347.076.464.211.115.136.174.316.174.51 0 .195-.057.377-.174.512-.123.145-.279.227-.464.227H5.46v2.292h2.536c.04-.087.074-.174.104-.261.12-.367.184-.752.184-1.145zM12.389 0H3.611C1.616 0 0 1.616 0 3.611v9.778C0 14.384 1.616 16 3.611 16h8.778C14.384 16 16 14.384 16 12.389V3.611C16 1.616 14.384 0 12.389 0zM14 12.389c0 1.282-1.038 2.32-2.32 2.32H4.32C3.038 14.709 2 13.671 2 12.389V4.32C2 3.038 3.038 2 4.32 2h7.36c1.282 0 2.32 1.038 2.32 2.32v8.769z" />
+                            </svg></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
+                                <path
+                                    d="M5.026 15c6.045 0 9.347-5.016 9.347-9.347 0-.14 0-.278-.01-.416A6.68 6.68 0 0 0 16 4.66a6.568 6.568 0 0 1-1.889.518 3.313 3.313 0 0 0 1.44-1.823 6.594 6.594 0 0 1-2.089.796 3.281 3.281 0 0 0-5.593 2.99A9.31 9.31 0 0 1 1.114 3.07 3.273 3.273 0 0 0 2.08 7.46 3.228 3.228 0 0 1 .64 7.1v.033a3.282 3.282 0 0 0 2.633 3.223 3.229 3.229 0 0 1-.87.116 3.257 3.257 0 0 1-.61-.057 3.282 3.282 0 0 0 3.058 2.271A6.579 6.579 0 0 1 1 13.673a9.288 9.288 0 0 0 5.026 1.405z" />
+                            </svg></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                <path
+                                    d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Newsletter -->
+            <div class="mb-4">
+                <h5>Assine nossa Newsletter</h5>
+                <form action="#" method="post" class="d-flex justify-content-center">
+                    <input type="email" class="form-control me-2" placeholder="Seu email" aria-label="Seu email"
+                        required>
+                    <button class="btn btn-primary" type="submit" style="white-space: nowrap; /* Impede a quebra de linha */
+    width: auto; /* Ajusta a largura do botão automaticamente ao conteúdo */
+    padding: 10px 20px; /* Espaçamento interno para deixar o botão mais largo */">Inscrever-se</button>
+                </form>
+            </div>
+
+            <!-- Direitos Autorais -->
+            <div>
+                <p class="mb-0">Copyright © 2024 AMSP Sports - Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-rC5NyU5KoGn4pBzJdH+qgq2YtWfLrkLSFnU1HMQ3MoX1zER9XzS9T9P0jW5ImOLe" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>
